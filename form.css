@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tulpen One', cursive;
+    background-color: black;
+}
+
+main{
+    color: white;
+    display: flex;
+    /* horizontally center */
+    justify-content: center;
+    /* vertically center and mention height also */
+    align-items: center;
+    height: 100vh;
+}
+
+main form{
+     width: 30%;
+     background-color: pink;
+     padding: 20px;
+     /* used to convert edges into curve shape */
+     border-radius: 5px;
+}
+
+/* grouping selector */
+label,#user,#pass,a{
+     display: block;
+}
+
+label{
+    font-size: 25px;
+}
+
+#user,#pass{
+    /* to increase the box width */
+    width: 90%;
+    /* used to increse the border height */
+    height: 30px;
+    border-radius: 5px;
+    /* used to remove the border */
+    border: none;
+    /* used to give space inside the box from left side */
+    padding-left: 25px;
+    /* used to outside space of border */
+    margin-bottom: 10px;
+    
+}
+
+main form #but{
+    display: flex;
+    /* used to display one contenet in left side and another in right side */
+    justify-content: space-between;
+}
+
+button{
+     width: 30%;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+     margin: 10px 0px;
+     background-color: green;
+     color: white;
+}
+
+#cancel{
+    background-color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*  Used to change the attribute color i.e.placeholder used with ::*/
+#user::placeholder{
+    color: red;
+}
+
+#pass::placeholder{
+    color: red;
+}
+
+/* it is a class name so remove the space and give the dot and access with dot */
+.fa-regular.fa-face-smile-wink{
+    color: blue;
+    font-size: 30px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+#cuser{
+position: relative;
+}
+
+.fa-solid.fa-user{
+position: absolute;
+color: black;
+top: 19%;
+left: 1%;
+}
+
+#cpass{
+    position: relative;
+}
+
+.fa-solid.fa-lock{
+    position: absolute;
+    color: black;
+    top: 17%;
+    left: 1%;
+}
